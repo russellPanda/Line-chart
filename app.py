@@ -33,7 +33,7 @@ def handle(path: str, target: str, time: str):
 @app.route('/json/<target>', methods=['GET'])
 def json(target):
     data = handle('VmRss.md', target, 'realtime')
-    print(data)
+    # print(data)
     return jsonify(data)
 
 
